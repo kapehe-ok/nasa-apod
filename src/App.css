@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Righteous&display=swap');
+
+body {
+  font-family: 'Righteous', cursive;
+  color: #d14f4f;
+  line-height: 1.7;
+  font-size: 19px;
+  background-color: #222222;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23424242' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* navbar ---------- */
+
+.navbar {
+  background-color: rgba(22, 22, 22, 0.8);
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.link {
+  color: #efefef;
+  display: inline-block;
+  padding: 3px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+.link:hover {
+  color: #f59494;
+  transform: scale(1.1);
+}
+
+/* nasa photo ---------- */
+
+.nasa-photo {
+  display: flex;
+  padding: 40px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.nasa-photo img {
+  width: 50%;
+  margin-right: 50px;
+  object-fit: contain;
+  max-height: 80vh;
+}
+
+.nasa-photo h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nasa-photo .date {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.nasa-photo .explanation {
+  color: #bbb;
+}
+
+@media (max-width: 1280px) {
+  .nasa-photo {
+    display: block;
+  }
+
+  .nasa-photo img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home-link {
+  font-size: 40px;
+  background: #f59494;
+  display: inline-block;
+  padding: 40px 80px;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-link:hover {
+  border-radius: 5px;
+  background: #e77171;
 }
