@@ -2,14 +2,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Running the Application
 
-Run `npm install` to install the dependencies.
-Visit [NASA's API page](https://api.nasa.gov/) and generate and API key. That key will be emailed to you.
+* Run `npm install` to install the dependencies.
 
-Create a `.env` file in the root of the project and input the following code:
+* Visit [NASA's API page](https://api.nasa.gov/) and generate and API key. That key will be emailed to you.
 
-`REACT_APP_NASA_KEY="Your API Key here!"`
+* Create a `.env` file in the root of the project and input the following code:
 
-Run `npm start` and navigate to `localhost:3000` to view the app!
+```REACT_APP_NASA_KEY="Your API Key here!"```
+
+* Run `npm start` and navigate to `localhost:3000` to view the app!
 
 ## Available Scripts
 
